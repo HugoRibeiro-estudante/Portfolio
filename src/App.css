@@ -1,20 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Mr+Dafoe&display=swap');
+/*font-family: 'Indie Flower', cursive;
+font-family: 'Mr Dafoe', cursive;*/
 
-*{
+* {
 
   margin: 0px;
   box-sizing: border-box;
   color: aliceblue;
+  font-family: 'Indie Flower', cursive;
 }
 
-body{
+body {
 
   background-color: black;
 
 }
 
+/*SCROLL*/
+
+*::-webkit-scrollbar {
+  width: 12px;
+
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #201D38;
+  border-radius: 20px;
+  height: 20px;
+  border: 2px solid #503AFE;
+}
+
+
 /* -----------HEADER------------------- */
 
-nav{
+nav {
 
   background-color: #503AFE;
   padding: 10px;
@@ -23,37 +42,43 @@ nav{
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
-  margin-top: 5px;
-  
+  margin-top: 8px;
+
 }
 
 /* --------------HOME----------------- */
 
-.container{
+.container {
 
   display: flex;
   justify-content: space-between;
 
 }
 
-.ps2{
+.ps2 {
 
   height: 80vh;
   width: 70%;
-  margin:  0rem 1.5rem;
+  margin: 0rem 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+
 }
 
-.name{
+.name {
 
   color: #503AFE;
-  font-size: 60px;
-
+  font-size: 4em;
+  font-family: 'Mr Dafoe', cursive;
+  letter-spacing: 5px;
+  font-weight: 300;
 }
 
-.description{
+.description {
   width: 30%;
   height: 80vh;
   display: flex;
@@ -63,32 +88,152 @@ nav{
   gap: 20px;
 }
 
-.description p:nth-child(2){
-  
+.description p:nth-child(2) {
+
   padding: 20px;
   text-align: center;
 }
 
-span{
+span {
   color: #503AFE;
-  font-size: 20px;
-  font-weight: bold; 
+  font-size: 25px;
+  font-weight: bold;
 
+}
+
+h2 {
+  color: aliceblue;
+  font-size: 30px;
+  font-family: 'Mr Dafoe', cursive;
+  letter-spacing: 5px;
 }
 
 /* ---------------ABOUT-------------- */
 
-.about{
+#innerModal {
 
+  background-color: #1700c3;
+  opacity: 0.8;
+  width: 70%;
+  height: 40%px;
+  display: block;
+}
+
+#innerModal p {
+  text-align: center;
+  border: 1px solid #fefefe;
+  background-color: #000000;
+  padding: 20px;
+  margin: 20px 0px;
+  padding: 15px;
+  position: relative;
+  float: left
+}
+
+#innerModal p:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 40px;
+  bottom: -11px;
+  background: #000;
+  transform: rotate(45deg);
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+#innerModal a {
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  color: #1700c3;
+  align-items: center;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+#innerModal img {
+
+  float: right;
+
+}
+
+.modal {
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
   width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.about {
+
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
   padding: 1rem;
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
+  margin: auto;
+
 }
 
-.block{
+
+.hidden {
+
+  display: none;
+
+}
+
+.titles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block {
 
   width: 120px;
   height: 100px;
@@ -98,4 +243,160 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.block img{
+  width: 80px;
+}
+
+.about>div {
+
+  width: 130px;
+
+}
+
+.mk {
+
+  float: left;
+  margin-right: -1rem;
+}
+
+.question {
+  background-color: black;
+}
+
+.mk1 {
+  margin-bottom: 7rem;
+}
+
+.mk2 {
+  margin-bottom: 14rem;
+}
+
+.tooltip {
+  position: relative;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #503AFE;
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*-------AUDIO---------*/
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  border: 2px dashed #503AFE;
+  border-radius: 30px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.displayEnd{
+
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 50%;
+  
+  
+}
+
+.skills img {
+  transition: 1s;
+}
+
+.skills img:hover {
+
+  margin-bottom: 30px;
+  transition: 1s;
+}
+
+.end {
+
+  margin: 5rem auto 3rem auto;
+  text-align: center;
+  background-color: #201D38;
+  border: 2px solid #503AFE;
+  padding: 20px;
+  width: 30%;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px)  {
+  .container {
+    flex-direction: column;
+    
+  }
+
+  .ps2{
+    width: 100%;
+    margin: auto;
+  }
+
+  .name{
+    font-size: 2.5rem;
+  }
+
+  .description{
+
+    width: 100%;
+    margin: auto;
+  }
+
+  .about > img{
+    width: 50px;
+  }
+
+  .block img{
+    width: 60px;
+  }
+
+  .block{
+    width: 70px;
+    height: 70px;
+  }
+
+  .mk {
+
+    float: left;
+    margin-right: 0px;
+  }
+
+  .mk1 {
+    margin-bottom: 5rem;
+  }
+  
+  .mk2 {
+    margin-bottom: 10rem;
+  }
+
 }
