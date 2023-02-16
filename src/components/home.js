@@ -1,5 +1,5 @@
 import React from 'react'
-import Background from './img/ps2.png';
+import Background from './img/Ps2.png';
 
 
 

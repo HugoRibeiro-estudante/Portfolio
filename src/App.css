@@ -42,7 +42,8 @@ nav {
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
-  margin-top: 8px;
+  margin: 8px 0px 0px 8px;
+
 
 }
 
@@ -57,7 +58,7 @@ nav {
 
 .ps2 {
 
-  height: 80vh;
+  height: 110vh;
   width: 70%;
   margin: 0rem 1.5rem;
   display: flex;
@@ -66,6 +67,7 @@ nav {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
+  
 
 }
 
@@ -229,8 +231,12 @@ h2 {
 }
 
 .titles {
+  width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin: auto;
+  gap: 25%;
+  
 }
 
 .block {
@@ -275,7 +281,7 @@ h2 {
 
 .tooltip {
   position: relative;
-
+  
 }
 
 .tooltip .tooltiptext {
@@ -286,7 +292,6 @@ h2 {
   text-align: center;
   padding: 5px 0;
   position: absolute;
-  z-index: 1;
   cursor: pointer;
 }
 
@@ -327,15 +332,6 @@ button:hover {
   
 }
 
-.skills img {
-  transition: 1s;
-}
-
-.skills img:hover {
-
-  margin-bottom: 30px;
-  transition: 1s;
-}
 
 .end {
 
@@ -350,6 +346,24 @@ button:hover {
   justify-content: space-between;
   border-radius: 20px;
 }
+
+
+/*------- FOOTER --------*/
+.footer{
+  background-color: #513afe8a;
+  padding: 10px;
+
+}
+
+.footer p{
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+
+/*------- RESPONSIVE --------*/
 
 @media only screen and (max-width: 600px)  {
   .container {
@@ -397,6 +411,18 @@ button:hover {
   
   .mk2 {
     margin-bottom: 10rem;
+  }
+
+  .end{
+    width: 60%;
+  }
+
+  .skills img{
+    width: 30%;
+  }
+
+  .end > p{
+    font-size: 20px;
   }
 
 }

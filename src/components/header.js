@@ -10,11 +10,10 @@ export default function Header(){
 
         <header>
             <nav>
-                <img src={LinkedIn} alt="LinkedIn"/>
-                <img src={GitHub} alt="GitHub"/>
-                <img src={WhatsApp} alt="WhatsApp"/>
-                <img src={Instagram} alt="Instagram"/>
-             
+                <a href='https://www.linkedin.com/in/hugo-ribeiro-alves/' target='_blank'><img src={LinkedIn} alt="LinkedIn"/></a>
+                <a href='https://github.com/HugoRibeiro-estudante/' target='_blank'><img src={GitHub} alt="GitHub"/></a>
+                <a href='https://wa.me/5534993379793' target='_blank'><img src={WhatsApp} alt="WhatsApp"/></a>
+                <a href='https://www.instagram.com/hug0_rib3ir0/' target='_blank'><img src={Instagram} alt="Instagram"/></a>
             </nav>
         </header>
 
