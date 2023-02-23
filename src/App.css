@@ -36,13 +36,13 @@ body {
 nav {
 
   background-color: #503AFE;
-  padding: 10px;
-  width: 15em;
+  padding: 5px;
+  width: 14em;
   border: 2px solid white;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
-  margin: 8px 0px 0px 8px;
+  margin: 8px 0px 0px 18px;
 
 
 }
@@ -59,7 +59,7 @@ nav {
 .ps2 {
 
   height: 110vh;
-  width: 70%;
+  width: 65%;
   margin: 0rem 1.5rem;
   display: flex;
   justify-content: center;
@@ -81,7 +81,7 @@ nav {
 }
 
 .description {
-  width: 30%;
+  width: 35%;
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -90,17 +90,28 @@ nav {
   gap: 20px;
 }
 
-.description p:nth-child(2) {
+.description img{
+  width: 150px;
+  border-radius: 10%;
+  border: 3px solid #503AFE;
+}
 
-  padding: 20px;
+.description p {
+
+  padding: 10px;
   text-align: center;
 }
 
 span {
-  color: #503AFE;
-  font-size: 25px;
+  color: aliceblue;
+  font-size: 20px;
   font-weight: bold;
 
+}
+
+h3{
+  color: #503AFE;
+  font-size: 25px;
 }
 
 h2 {
@@ -286,11 +297,11 @@ h2 {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 100%;
   background-color: black;
   color: #503AFE;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 0px;
   position: absolute;
   cursor: pointer;
 }
@@ -350,6 +361,7 @@ button:hover {
 
 /*------- FOOTER --------*/
 .footer{
+  margin-top: 80px;
   background-color: #513afe8a;
   padding: 10px;
 
@@ -369,6 +381,10 @@ button:hover {
   .container {
     flex-direction: column;
     
+  }
+
+  nav{
+    width: 12em;
   }
 
   .ps2{
@@ -424,5 +440,6 @@ button:hover {
   .end > p{
     font-size: 20px;
   }
+
 
 }

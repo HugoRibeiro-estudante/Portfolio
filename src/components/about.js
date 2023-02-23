@@ -106,7 +106,7 @@ export default function About() {
     
     // When the user clicks on <span> (x), close the modal
     function close() {
-        modal.classList.add("hidden");
+        modal.classList.add("hidden");  
     }
 
     // When the user clicks anywhere outside of the modal, close it
