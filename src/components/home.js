@@ -12,7 +12,7 @@ export default function Home(){
             <div className='description'>
 
                 <img src={Hugo} alt='Foto minha'/>
-                <h3>Web Developer</h3>
+                <h3 className='dev'>Web Developer</h3>
                 <p>Welcome my friend, this my <span>PORTFOLIO</span></p>
 
             </div>
